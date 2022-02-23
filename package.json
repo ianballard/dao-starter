@@ -1,0 +1,56 @@
+{
+  "name": "dao-starter",
+  "version": "1.0.0",
+  "description": "DAO starter",
+  "scripts": {
+    "clean": "hardhat clean",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node --no-deploy",
+    "deploy": "hardhat deploy",
+    "deploy:local": "hardhat --network localhost deploy",
+    "deploy:rinkeby": "hardhat --network rinkeby deploy && hardhat --network rinkeby etherscan-verify",
+    "prettier:solidity": "./node_modules/.bin/prettier --write contracts/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianballard/dao-starter.git"
+  },
+  "keywords": [
+    "ethereum",
+    "solidity",
+    "blockchain",
+    "dao",
+    "governance",
+    "token",
+    "erc20"
+  ],
+  "author": "Ian Ballard",
+  "contributors": [
+    "Ian Ballard <ianballard.dev@gmail.com>"
+  ],
+  "license": "AGPLv3",
+  "bugs": {
+    "url": "https://github.com/ianballard/dao-starter/issues"
+  },
+  "homepage": "https://github.com/ianballard/dao-starter/blob/main/README.md",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.4",
+    "hardhat": "^2.8.4",
+    "hardhat-deploy": "^0.10.5",
+    "hardhat-gas-reporter": "^1.0.8",
+    "mocha": "^9.2.1",
+    "prettier": "^2.5.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "@openzeppelin/test-helpers": "^0.5.15"
+  }
+}

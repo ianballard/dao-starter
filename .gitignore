@@ -102,3 +102,11 @@ dist
 
 # TernJS port file
 .tern-port
+
+.env
+.env.rinkeby
+.idea
+
+artifacts
+build
+cache
